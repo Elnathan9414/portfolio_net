@@ -1,0 +1,198 @@
+﻿@{
+    ViewData["Title"] = "Acceuil";
+}
+@{
+    ViewData["Title"] = "Accueil";
+}
+
+<section class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- TEXTE -->
+            <div class="col-md-6">
+                <p class="text-muted">Salut, je suis</p>
+
+                <h1 class="fw-bold">
+                    Josue Elnathan 
+                    <span class="text-gradient">Mbondo</span>
+                </h1>
+
+                <h4 class="mt-3 text-light">
+                    Développeur Web & Spécialiste Data | Administrateur système
+                </h4>
+
+                <p class="mt-3 text-secondary">
+                    Fort d'une solide expertise en administration systèmes et réseaux, je bâtis des applications web robustes et évolutives. Actuellement spécialisé en analyse de données et intelligence artificielle, je transforme les flux d'informations complexes en solutions intelligentes. Mon objectif : conjuguer la rigueur de l'infrastructure, l'agilité du développement et la puissance de l'IA pour créer des expériences numériques à haute valeur ajoutée.
+                </p>
+
+                <div class="mt-4">
+                    <a asp-controller="Projects" asp-action="Index" class="btn btn-gradient me-2">
+                        🚀 Voir mes projets
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light">
+                        📄 Télécharger mon CV
+                    </a>
+                </div>
+
+                <!-- ICÔNES -->
+                <div class="mt-4 d-flex gap-3">
+                    <a href="#" class="icon-box"><i class="bi bi-github"></i></a>
+                    <a href="#" class="icon-box"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="icon-box"><i class="bi bi-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- IMAGE -->
+            <div class="col-md-6 text-center">
+                <div class="profile-container">
+                    <img src="/assets/images/profil.png" class="profile-img" />
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<hr class="separator-gradient">
+<section class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- TEXTE -->
+            <div class="col-md-6">
+                <h2 class="fw-bold mb-3">À propos de moi</h2>
+
+                <p class="text-secondary">
+                    L'alliance de l'infrastructure, du code et de l'intelligence. <br />
+
+                    Mon parcours a débuté dans les fondations du numérique en tant qu'administrateur systèmes et réseaux, ce qui m'a donné une vision profonde de la performance et de la sécurité. Aujourd'hui développeur web, je conçois des architectures robustes et fluides.
+
+                    Actuellement en spécialisation Data & IA, je complète cette expertise pour transformer les données en solutions intelligentes. Mon objectif est simple : bâtir des applications modernes qui ne se contentent pas d'afficher des informations, mais qui les analysent pour créer une réelle valeur stratégique.
+                </p>
+
+                <p class="text-secondary">
+                    Basé à Ottawa, je suis passionné par les technologies Microsoft
+                    et le développement backend.
+                </p>
+            </div>
+
+            <!-- CARDS -->
+            <div class="col-md-6">
+                <div class="row">
+
+                    <!-- INFRASTRUCTURE -->
+                    <div class="col-6 mb-4">
+                        <div class="skill-card">
+                            <i class="bi bi-hdd-network"></i>
+                            <h5>Infrastructure</h5>
+                            <p>Systèmes & Réseaux</p>
+                        </div>
+                    </div>
+
+                    <!-- BACKEND -->
+                    <div class="col-6 mb-4">
+                        <div class="skill-card">
+                            <i class="bi bi-code-slash"></i>
+                            <h5>Backend</h5>
+                            <p>C# / ASP.NET Core, PHP, Python</p>
+                        </div>
+                    </div>
+
+                    <!-- DATA / IA -->
+                    <div class="col-6 mb-4">
+                        <div class="skill-card">
+                            <i class="bi bi-cpu"></i>
+                            <h5>Data & IA</h5>
+                            <p>Analyse & Intelligence</p>
+                        </div>
+                    </div>
+
+                    <!-- ARCHITECTURE -->
+                    <div class="col-6 mb-4">
+                        <div class="skill-card">
+                            <i class="bi bi-diagram-3"></i>
+                            <h5>Front end</h5>
+                            <p>HTML, CSS, JavaScript, React</p>
+                        </div>
+                    </div>
+                    <a asp-controller="Home" asp-action="About" class="btn btn-outline-light btn-lg">
+                        👤 En savoir plus
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr class="separator-gradient">
+
+<section class="projects-section">
+    <div class="container">
+
+        <h2 class="text-center fw-bold mb-5">Mes Projets</h2>
+
+        <div class="row">
+
+            <!-- PROJET 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h5>Préparation TCF Canada</h5>
+                        <p>Plateforme d'entraînement immersive conçue avec Laravel pour aider les candidats à réussir l'examen TCF Canada via des simulations de tests en temps réel.</p>
+
+                        <div class="tags">
+                            <span>Laravel</span>
+                            <span>PHP</span>
+                            <span>tailwind css</span>
+                            <span>MYSQL</span>
+
+                        </div>
+
+                        <a href="#" class="project-link">Voir projet →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h5>Vision & Création IA Mobile</h5>
+                        <p>Application mobile d'IA avancée : analyse de photos en temps réel pour détection d'objets/scènes, combinée à un moteur de génération d'images créatif.</p>
+
+                        <div class="tags">
+                            <span>React Native</span>
+                            <span>Typescript</span>
+                            <span>IA</span>
+                        </div>
+
+                        <a href="#" class="project-link">Voir GitHub →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJET 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h5>Analyse de Données</h5>
+                        <p>Dashboard interactif combinant la puissance de React et de Power BI pour identifier et prédire les anomalies lors des opérations d'import-export.</p>
+
+                        <div class="tags">
+                            <span>React.js</span>
+                            <span>TypeSrript</span>
+                            <span>Power Bi</span>
+                        </div>
+
+                        <a href="#" class="project-link">Explorer →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
